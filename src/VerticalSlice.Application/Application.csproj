@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<RootNamespace>VerticalSlice.Application</RootNamespace>
+	<AssemblyName>VerticalSlice.Application</AssemblyName>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.4.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+    <PackageReference Include="StackSpot.ErrorHandler" Version="1.0.1" />
+    <PackageReference Include="StackSpot.Logging" Version="1.0.0" />
+    <PackageReference Include="StackSpot.Logging.OpenTracing" Version="1.0.0" />
+    <PackageReference Include="StackSpot.Metrics" Version="1.0.0" />
+    <PackageReference Include="StackSpot.Tracing" Version="1.0.0" />
+	<PackageReference Include="Refit" Version="5.2.1" />
+	<PackageReference Include="Refit.HttpClientFactory" Version="5.2.1" />
+	<PackageReference Include="Scrutor" Version="4.0.0" />
+	<PackageReference Include="StackSpot.ErrorHandler" Version="1.0.1" />
+	<PackageReference Include="StackSpot.Metrics" Version="1.0.0" />
+	<PackageReference Include="StackSpot.Tracing" Version="1.0.0" />
+	<PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UseCases\UpdateReceipt\" />
+  </ItemGroup>
+</Project>

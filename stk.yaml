@@ -1,0 +1,23 @@
+applied_templates:
+- inputs:
+    framework: net5.0
+  template_data_path: skynet-dotnet-stack/rest-app-cs-template
+- inputs:
+    log_extension:
+    - OpenTracing
+    log_level: INFO
+  template_data_path: skynet-dotnet-stack/logging-app-cs-plugin
+- inputs:
+    type: Prometheus
+  template_data_path: skynet-dotnet-stack/metrics-app-cs-plugin
+- inputs:
+    exporter_type: X-Ray
+    port: '1286'
+    server: X-Ray
+  template_data_path: skynet-dotnet-stack/trace-app-cs-plugin
+- inputs: {}
+  template_data_path: skynet-dotnet-stack/errorhandler-app-cs-plugin
+global_inputs:
+  project_name: VerticalSlice
+stack: skynet-dotnet-stack
+stack_type: app
